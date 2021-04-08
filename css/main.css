@@ -29,6 +29,7 @@ body {
 header {
   display: flex;
   background-color: #e2e2e2;
+  align-items: stretch;
 }
 
 nav  ul {
@@ -43,6 +44,7 @@ nav  ul {
 nav a {
   margin: 0.5rem;
   font-size: 1.125rem;
+  color: blue;
 }
 
 h1 {
@@ -60,7 +62,6 @@ header p {
 header img {
   width: 2em;
   margin-left: .5rem;
-  align-items: auto;
 }
 
 @media only screen and (min-width: 40em) {
