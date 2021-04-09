@@ -19,7 +19,7 @@ html {
 */
 
 img {
-  width: 100%;
+  width: auto;
 }
 
 body {
@@ -69,8 +69,6 @@ header img {
   width: 2em;
   position: absolute;
   margin: .5rem;
-  /* Margins:* `.5rem` */
-  /* - *Paddings:* `1rem`, `.75em 1em .6em` */
 }
 
 header ul li a:hover {
@@ -84,11 +82,4 @@ header ul li a:hover {
 nav a {
   text-decoration: none;
   border-color: inherit;
-}
-@media only screen and (min-width: 40em) {
-
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
