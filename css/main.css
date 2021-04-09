@@ -1,11 +1,11 @@
 html {
-    box-sizing: border-box;
-    font-family: sans-serif;
-    line-height: 1.5;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5;
 }
 
-  *, *::before, *::after {
-    box-sizing: inherit;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 /*
@@ -16,10 +16,10 @@ html {
 - *Margins:* `.5rem`
 - *Paddings:* `1rem`, `.75em 1em .6em`
 - *Image width:* `2rem`
- */
+*/
 
 img {
-  width: 100%
+  width: 100%;
 }
 
 body {
@@ -27,43 +27,64 @@ body {
 }
 
 header {
-  display: flex;
   background-color: #e2e2e2;
-  align-items: stretch;
+  padding: 0;
+  align-items: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-nav  ul {
+nav ul {
   list-style-type: none;
   padding: 0;
   padding: .75em 1em .6em;
+  margin: 0;
 
   display: flex;
   justify-content: space-between;
 }
 
-nav a {
-  margin: 0.5rem;
+header ul li a {
+  margin: .5rem;
   font-size: 1.125rem;
-  color: blue;
+  color: #0074d9;
+  text-decoration: none;
+  padding: .75em 1em .6em;
 }
 
-h1 {
-  margin: 0;
-  padding: 1rem;
+header h1 {
+  margin: .5rem;
+  padding: .75em 1em .6em;
 }
 
 header p {
   text-decoration: none;
   font-style: italic;
   font-size: 1.125rem;
-  padding: .75em 1em .6em;
 }
 
 header img {
   width: 2em;
-  margin-left: .5rem;
+  position: absolute;
+  margin: .5rem;
+  /* Margins:* `.5rem` */
+  /* - *Paddings:* `1rem`, `.75em 1em .6em` */
 }
 
+header ul li a:hover {
+  color: #0074d9;
+  font-weight: normal;
+  text-decoration: none;
+  border-color: inherit;
+  background-color: #e2e2e2;
+}
+
+nav a {
+  text-decoration: none;
+  border-color: inherit;
+}
 @media only screen and (min-width: 40em) {
 
   header {
